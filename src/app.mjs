@@ -20,7 +20,7 @@ const pathview=path.join(__dirname,'/templates/views')
 const pathpartials=path.join(__dirname,'/templates/partials')
 
 const app=express()
-
+const port=process.env.PORT || 3000
 
 app.set('view engine','hbs')
 app.set('views',pathview)
@@ -73,6 +73,6 @@ app.get('/time',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('loading... ')
 })

@@ -8,7 +8,7 @@ timeform.addEventListener('submit',(e)=>{
     e.preventDefault()
     const location=search.value
     msg1.textContent='Loading....'
-    fetch('http://localhost:3000/time?address='+location).then
+    fetch('/time?address='+location).then
     ((response)=>{
         response.json().then((data)=>{
             if(data.error){
