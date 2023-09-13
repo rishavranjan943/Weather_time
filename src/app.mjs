@@ -28,11 +28,11 @@ app.set('views',pathview)
 hbs.registerPartials(pathpartials)
 app.use(express.static(pathpublic))
 
-app.get('/Weather_time/',(req,res)=>{
+app.get('/',(req,res)=>{
     res.render('index')
 })
 
-app.get('/Weather_time/weather',(req,res)=>{
+app.get('/weather',(req,res)=>{
     if(!req.query.address){
         return res.render('weather');
     }
