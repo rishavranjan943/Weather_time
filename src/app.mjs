@@ -16,8 +16,8 @@ const __filename=fileURLToPath(import.meta.url)
 const __dirname=dirname(__filename)
 
 const pathpublic=path.join(__dirname,'../public')
-const pathview=path.join(__dirname,'./templates/views')
-const pathpartials=path.join(__dirname,'./templates/partials')
+const pathview=path.join(__dirname,'/templates/views')
+const pathpartials=path.join(__dirname,'/templates/partials')
 
 const app=express()
 
